@@ -1,8 +1,9 @@
-require('dotenv').congfig()
+require('dotenv').config()
 const express = require('express')
 const app = express()
 
-app.use('/places', require('./contollers/places'))
+app.use('/places', require('./controllers/places'))
+
 app.get('/', (req, res) => {
     res.send('Hello world!')
 })
